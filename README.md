@@ -1,17 +1,16 @@
-# Content Engine — Lead Generation Frontend
+# Content Engine Frontend — Render API Connected
 
-Next.js 14 frontend for the UK + Canada B2B lead-generation system.
+## Vercel Environment Variable
+Set `NEXT_PUBLIC_API_BASE_URL` to:
+`https://scraper-backend-pvuk.onrender.com`
 
-## Run locally
-```bash
+After saving, redeploy the Vercel project.
+
+## Connected endpoints
+- `GET /api/health` — API status
+- `POST /api/discovery` — Start discovery
+- `GET /api/leads` — Load filtered leads
+
+## Local
 npm install
 npm run dev
-```
-
-Open http://localhost:3000
-
-## Deploy to Vercel
-Import this folder/repository into Vercel. Framework: Next.js.
-
-## Backend integration
-The UI currently uses sample lead data. Connect the form and lead table to your n8n/Supabase/API endpoints next.
